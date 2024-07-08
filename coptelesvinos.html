@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         body {
+        background-image: url('https://img.freepik.com/fotos-premium/cocteles-cocteles-diferentes-colores-sobre-mesa_950347-5590.jpg'); /* Ruta a tu imagen de fondo */
+        background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la página */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center center; /* Centra la imagen */
+    }
+       
+        .drink-item {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .drink-item:hover {
+            transform: scale(1.1);
+        }
+        .drink-item img {
+            width: 100%;
+            height: auto;
+        }
+        .drink-item .drink-title {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .drink-item:hover .drink-title {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4 text-center">Vinos y Cócteles</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="drink-item">
+                    <img src="https://scontent.flim6-4.fna.fbcdn.net/v/t1.18169-9/31416875_1772459356177762_7144957843082482235_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=dgq5eECv8rkQ7kNvgGWhWZd&_nc_oc=AdhXPKODcO1JqKPZPVWfR3E_5tgmCDSoTI55tLRR718Y43ddhXssOkSEOEjMC6Ogrdw&_nc_ht=scontent.flim6-4.fna&oh=00_AYAQncAVK7f7iFzkbnqYfcdYEe0Ww99FUOc5NHYUUiR-aA&oe=66B2D449" alt="Vino 1">
+                    <p class="drink-title">INTIPALKA</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="drink-item">
+                    <img src="https://pachamia.tiendada.com/api/scrooge/file/FL-4AEB6894" alt="Vino 2">
+                    <p class="drink-title">Morandina</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="drink-item">
+                    <img src="https://i0.wp.com/carlsgrill.com/wp-content/uploads/2023/08/Tabernero-Borgona.jpg?fit=1000%2C1000&ssl=1" alt="Vino 3">
+                    <p class="drink-title">Tabernero borgoña</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="drink-item">
+                    <img src="https://dojiw2m9tvv09.cloudfront.net/69246/product/tacamarosadooo5649.png" alt="Vino 4">
+                    <p class="drink-title">Tacama</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="drink-item">
+                    <img src="https://d3f5rf6vpkkrog.cloudfront.net/images/valoraciones/0015/1893/coctel-chilcano-de-pisco.jpg?1433311697" alt="Vino 5">
+                    <p class="drink-title">Pisco Sour </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="drink-item">
+                    <img src="https://uvn-brightspot.s3.amazonaws.com/assets/vixes/imj/elgrancatador/3/3-cocteles-con-leche-condesada-4.jpg" alt="Vino 6">
+                    <p class="drink-title">Pisco Sour con leche condensada </p>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y Popper.js (opcional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
